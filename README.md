@@ -10,7 +10,7 @@ You will implement an extended version of the balanced parentheses algorithm tha
 1. implement the balanced parenthesis algorithm
 1. practice using HTML
 1. practice using stacks
-1. practice using the pytest
+1. practice using pytest and test driven development
 
 ## Background
 
