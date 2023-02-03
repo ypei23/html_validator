@@ -62,7 +62,7 @@ Complete the following tasks:
 1. Update the `README.md` file so that the test case badges point to your forked repo
 1. Implement the `validate_html` and `_extract_tags` functions so that all test cases in `tests/test_main.py` pass
 
-## Extra Credit: HTML Attribues
+## Extra Credit: HTML Attributes
 
 The function of many HTML tags can be modified by specifying attributes within the opening tag.
 For example:
