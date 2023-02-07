@@ -25,7 +25,10 @@ def validate_html(html):
             if tag_front == []:
                 valid = False
             else:
-                tag_front.pop()
+                if tag_front[-1] == tag:
+                    tag_front.pop()
+                else:
+                    return False
     return valid and tag_front == []
     # HINT:
     # use the _extract_tags function below to generate
