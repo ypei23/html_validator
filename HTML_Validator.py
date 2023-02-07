@@ -14,6 +14,8 @@ def validate_html(html):
     '''
     tag_front = []
     tag_list = _extract_tags(html)
+    if tag_list == []:
+        return False
     valid = True
     for i in range(len(tag_list)):
         tag = tag_list[i]
