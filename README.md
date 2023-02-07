@@ -1,6 +1,6 @@
 # HTML Validation with Stacks
-[![](https://github.com/mikeizbicki/html_validator/workflows/tests/badge.svg)](https://github.com/mikeizbicki/html_validator/actions?query=workflow%3Atests)
-[![](https://github.com/mikeizbicki/html_validator/workflows/extra_credit/badge.svg)](https://github.com/mikeizbicki/html_validator/actions?query=workflow%3Atests)
+[![](https://github.com/ypei23/html_validator/workflows/tests/badge.svg)](https://github.com/ypei23/html_validator/actions?query=workflow%3Atests)
+[![](https://github.com/ypei23/html_validator/workflows/extra_credit/badge.svg)](https://github.com/ypei23/html_validator/actions?query=workflow%3Atests)
 
 You will implement an extended version of the balanced parentheses algorithm that checks whether html tags are balanced.
 (See [chapter 4.7](https://runestone.academy/runestone/books/published/pythonds/BasicDS/BalancedSymbolsAGeneralCase.html) of the book for details on the balanced parentheses algorithm.)
@@ -12,7 +12,7 @@ You will implement an extended version of the balanced parentheses algorithm tha
 1. practice using stacks
 1. practice using pytest and test driven development
 
-## Background
+## BACKGROUND 
 
 HTML is how webpages format their content.
 A simple example is the following code:
