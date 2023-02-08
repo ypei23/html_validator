@@ -12,24 +12,28 @@ def validate_html(html):
     >>> validate_html('<strong>example')
     False
     '''
+    if len(html) == 0:
+        return True
+    i = 0
     tag_front = []
     tag_list = _extract_tags(html)
     if tag_list == []:
         return False
-    valid = True
-    for i in range(len(tag_list)):
-        tag = tag_list[i]
-        if "/" not in tag:
-            tag_front.append(tag)
+    while i < len(tag_list):
+        if "/" not in tag_list[i]:
+            tag = tag_list[i]
+            tag_with = tag[:1] + "/" + tag[1:]
+            tag_front.append(tag_with)
+            i += 1
         else:
             if tag_front == []:
-                valid = False
+                return False
             else:
-                if tag_front[-1] == tag:
-                    tag_front.pop()
-                else:
+                x = tag_front.pop()
+                if x != tag_list[i]:
                     return False
-    return valid and tag_front == []
+                i += 1
+    return tag_front == []
     # HINT:
     # use the _extract_tags function below to generate
     # a list of html tags without any extra text;
